@@ -3,6 +3,10 @@ body {
     padding-left: 20px;
 }
 
+p {
+    margin: 0;
+}
+
 ul {
     padding: 0;
     color: gray;
@@ -31,4 +35,34 @@ input {
 
 textarea {
     padding-left: 10px;
+}
+
+#breadcrumb a {
+    text-decoration: none;
+}
+
+#breadcrumb a:hover {
+    text-decoration: underline;
+    color: red;
+    transition-duration: 1s;
+}
+
+#breadcrumb ul li:last-child a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+#breadcrumb ul li:last-child {
+    background-color: aquamarine;
+    transition-duration: 0.5s;
+}
+
+#breadcrumb ul li:last-child:hover {
+    background-color: black;
+}
+
+#breadcrumb ul li:last-child:hover a {
+    color: aquamarine;
 }
