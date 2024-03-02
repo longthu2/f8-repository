@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav-child-click {
+            padding: 10px 30px;
+            background-color: hsl(43.15deg 35.74% 51.18%);
+            color: white;
+        }
+
+        .nav-child-default {
+            padding: 10px 30px;
+            background-color: white;
+            color: hsl(43.15deg 35.74% 51.18%);
+            border-bottom: 1px solid hsl(43.15deg 35.74% 51.18%);
+            border-top: 1px solid hsl(43.15deg 35.74% 51.18%);
+        }
+
+        .nav-child-default:first-child {
+            border-left: 1px solid hsl(43.15deg 35.74% 51.18%);
+        }
+
+        .nav-child-default:last-child {
+            border-right: 1px solid hsl(43.15deg 35.74% 51.18%);
+        }
+
+        #breadcrumb a {
+            text-decoration: none;
+        }
+
+        #breadcrumb a:hover {
+            text-decoration: underline;
+            color: red;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="breadcrumb">
+        <ul style="display: flex; gap: 20px; list-style: none;">
+            <li><a href="./form-contact.html">view form-contact</a></li>
+            <li><a href="./customer-review.html">view customer-review</a></li>
+            <li><a href="./form-access-manager.html">view form-access-manager</a></li>
+            <li><a href="./contact-map.html" style="color: red; text-decoration: underline;">view contact-map</a></li>
+            <li><a href="./call-to-action.html">view call-to-action</a></li>
+        </ul>
+    </section>
+
+    <main>
+        <nav>
+            <ul style="display: flex; list-style: none; align-items: center;">
+                <li class="nav-child-click" onclick="handleClick(this)">United Arab Emirates</li>
+                <li class="nav-child-default" onclick="handleClick(this)">London</li>
+                <li class="nav-child-default" onclick="handleClick(this)">Singapore</li>
+                <li class="nav-child-default" onclick="handleClick(this)">HongKong</li>
+            </ul>
+        </nav>
+
+        <section id="content" style="padding: 20px;">
+            <div style="background-color: hsl(0deg 0% 96.47%); display: flex; justify-content: space-between;">
+                <div id="left-content" style="padding: 40px;">
+                    <h3 style="text-transform: uppercase;">ads securities l.l.c</h3>
+                    <div>
+                        <p>8th floor, CI Tower
+                            <br>
+                            Comanche Road. PO Box 93894
+                            <br>
+                            Abu Dhabi, United Arab Eminates
+                        </p>
+                    </div>
+                    <div>
+                        <p>Tel +971 2 657 2300
+                            <br>
+                            Fax: +971 2 657 2300
+                            <br>
+                            Email: <span
+                                style="color: hsl(43.15deg 35.74% 51.18%); text-decoration: underline;">tranlong280403@gmail.com</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="righ-content">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44104.811817385824!2d105.87238026499773!3d18.33026151751507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31384dfb34ee3e67%3A0x55b03ab07902f32f!2zQ-G6p3Ugdsaw4bujdCBUaMOgbmggUGjhu5EgSMOgIFTEqW5o!5e0!3m2!1sen!2s!4v1709053926859!5m2!1sen!2s"
+                        width="1000" height="450" style="border:0;" allowfullscreen="" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const handleClick = (element) => {
+            const clickedElement = document.querySelector('.nav-child-click');
+            clickedElement.classList.remove('nav-child-click');
+            clickedElement.classList.add('nav-child-default');
+            element.classList.add('nav-child-click');
+            element.classList.remove('nav-child-default');
+        }
+    </script>
+</body>
+
+</html>

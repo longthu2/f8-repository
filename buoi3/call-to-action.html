@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn-custom {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .btn-custom:hover {
+            background-color: white;
+            color: black;
+            transition-duration: 1s;
+        }
+
+        .span-custom {
+            color: hsl(196.72deg 100% 47.84%);
+            cursor: pointer;
+        }
+
+        .span-custom:hover {
+            color: hsl(221, 100%, 48%);
+            transition-duration: 1s;
+        }
+
+        #breadcrumb a {
+            text-decoration: none;
+        }
+
+        #breadcrumb a:hover {
+            text-decoration: underline;
+            color: red;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="breadcrumb">
+        <ul style="display: flex; gap: 20px; list-style: none;">
+            <li><a href="./form-contact.html">view form-contact</a></li>
+            <li><a href="./customer-review.html">view customer-review</a></li>
+            <li><a href="./form-access-manager.html">view form-access-manager</a></li>
+            <li><a href="./contact-map.html">view contact-map</a></li>
+            <li><a href="./call-to-action.html" style="color: red; text-decoration: underline;">view call-to-action</a></li>
+        </ul>
+    </section>
+
+    <main style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 20px;">
+        <div style="
+                background-color: hsl(223.1deg 40.57% 65.69%);
+                width: 100px; height: 50px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            ">
+            190 x 50
+        </div>
+        <h1 style="margin: 0;">Best <span class="span-custom">Shared Hosting</span> Company</h1>
+        <p style="margin: 0;">With this responsive landing page template, you can promote your all hosting, domain and
+            email services.</p>
+        <div style="display: flex; gap: 20px;">
+            <button class="btn-custom">View
+                Plans</button>
+            <button class="btn-custom">All
+                Features</button>
+        </div>
+    </main>
+</body>
+
+</html>
