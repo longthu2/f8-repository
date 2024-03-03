@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./global.css">
+
+    <!-- FLAT ICON -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <style>
+        ul {
+            list-style: none;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* HANDLE INPUT CHECKED */
+
+        .iphone10 {
+            display: none;
+        }
+
+        #all:checked~nav .label0 {
+            background-color: #29388e;
+            color: white;
+        }
+
+        #all:checked~#list-phone .phone {
+            display: block;
+        }
+
+
+        #ip11:checked~nav .label11 {
+            background-color: #29388e;
+            color: white;
+        }
+
+        #ip11:checked~#list-phone .phone {
+            display: none;
+        }
+
+        #ip11:checked~#list-phone .iphone11 {
+            display: block;
+        }
+
+        #ip8:checked~nav .label8 {
+            background-color: #29388e;
+            color: white;
+        }
+
+        #ip8:checked~#list-phone .phone {
+            display: none;
+        }
+
+        #ip8:checked~#list-phone .iphone8 {
+            display: block;
+        }
+
+        #ip9:checked~nav .label9 {
+            background-color: #29388e;
+            color: white;
+        }
+
+        #ip9:checked~#list-phone .phone {
+            display: none;
+        }
+
+        #ip9:checked~#list-phone .iphone9 {
+            display: block;
+        }
+
+        #ip10:checked~nav .label10 {
+            background-color: #29388e;
+            color: white;
+        }
+
+        #ip10:checked~#list-phone .phone {
+            display: none;
+        }
+
+        #ip10:checked~#list-phone .iphone10 {
+            display: block;
+        }
+
+        #ipad:checked~nav .label-ipad {
+            background-color: #29388e;
+            color: white;
+        }
+
+        #ipad:checked~#list-phone .phone {
+            display: none;
+        }
+
+        #ipad:checked~#list-phone .ipad {
+            display: block;
+        } /* END OF HANDLE INPUT CHECKED */
+
+
+        /* CSS LABEL */
+        label {
+            padding: 10px;
+            color: black;
+            background-color: #ddd;
+        }
+
+        /* CSS NAVBAR */
+
+        #nav-content {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        label {
+            padding: 20px;
+            cursor: pointer;
+        }
+
+
+        #list-phone {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #list-phone .item {
+            width: 200px;
+        }
+
+        #list-phone ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            width: 100%;
+        }
+
+        .item {
+            position: relative;
+        }
+
+        .item:hover .item-options {
+            opacity: 1;
+        }
+
+        /* CHANGE IMG URL WHEN HOVER */
+
+        .item:hover .item-img-1 {
+            background-image: url(https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-plus-xanh-la-128gb-thumb-600x600.jpg);
+        }
+
+        .item:hover .item-img-2 {
+            background-image: url(https://www.bhphotovideo.com/images/images2500x2500/apple_mu1x2ll_a_ipad_pro_1tb_wi_fi_1568371.jpg);
+        }
+
+        .item:hover .item-img-3 {
+            background-image: url(https://p.turbosquid.com/ts-thumb/Z5/1uxgN0/3ZdLfsQU/iphone_8_black_000/jpg/1507666040/600x600/fit_q87/8a5d640dc0f4dfeac9b54f5227666f265060eb64/iphone_8_black_000.jpg);
+        }
+
+        .item:hover .item-img-4 {
+            background-image: url(https://th.bing.com/th/id/OIP.I7L86p8MESO8c7sr3vAabAHaGQ?rs=1&pid=ImgDetMain);
+        }
+
+        .item:hover .item-img-5 {
+            background-image: url(https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-plus-xanh-la-128gb-thumb-600x600.jpg);
+        }/* END OF CHANGE IMG URL WHEN HOVER */
+
+        /* IMG CSS GLOBAL */
+        .item-img {
+            height: 200px;
+            width: 200px;
+            transition-duration: 0.5s;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        /* IMG URL */
+        .item-img-1 {
+            background-image: url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg);
+        }
+
+        .item-img-2 {
+            background-image: url(https://www.bhphotovideo.com/images/images2500x2500/apple_128gb_ipad_pro_wi_fi_1185490.jpg);
+        }
+
+        .item-img-3 {
+            background-image: url(https://i5.walmartimages.com/asr/042decc6-f8f4-440b-b69e-20cbd3044fd3_1.b06d6c758d620b5ec281620a1b31a684.jpeg);
+        }
+
+        .item-img-4 {
+            background-image: url(https://www.iphonefaq.org/files/styles/large/public/iphone8-9.jpg);
+        }
+
+        .item-img-5 {
+            background-image: url(https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg);
+        }/* END OF IMG URL */
+
+
+        .item-options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: opacity 0.5s ease;
+        }
+
+        .item-options ul li {
+            padding: 5px 10px;
+            background-color: #29388e;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .item-options button {
+            padding: 5px 10px;
+            color: white;
+            border: 1px solid #29388e;
+            background-color: #29388e;
+            cursor: pointer;
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; margin-top: 40px;">
+        <section style="text-align: center;">
+
+            <!-- INPUT RADIO HIDDEN -->
+            <input type="radio" checked name="radioGroup" id="all">
+            <input type="radio" name="radioGroup" id="ip8">
+            <input type="radio" name="radioGroup" id="ip9">
+            <input type="radio" name="radioGroup" id="ip10">
+            <input type="radio" name="radioGroup" id="ip11"">
+            <input type="radio" name="radioGroup" id="ipad">
+            
+
+
+            <h1>Best Seller</h1>
+            <nav style="margin: 40px 0;">
+                <ul id="nav-content">
+                    <li>
+                        <label class="label0" for="all">All products</label>
+                    </li>
+                    <li>
+                        <label class="label11" for="ip11">Iphone 11</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radioGroup" id="radio2">
+                        <label class="label8" for="ip8">Iphone 8</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radioGroup" id="radio3">
+                        <label class="label-ipad" for="ipad">Ipad</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radioGroup" id="radio4">
+                        <label class="label9" for="ip9">Iphone 9</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="radioGroup" id="radio5">
+                        <label class="label10" for="ip10">Iphone 10</label>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- LIST PHONES -->
+            <section id="list-phone">
+
+                <!-- phone 1 -->
+                <div class="phone iphone11">
+                    <div class="item">
+                        <div class="item-img item-img-1">
+                        </div>
+                        <div style="width: 100%;">
+                            <div class="item-options">
+                                <ul>
+                                    <li>
+                                        <i class="fi fi-rr-heart"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-replace"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-eye"></i>
+                                    </li>
+                                </ul>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px; text-align: center;">
+                        <div class="stars" style="color: burlywood;">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">☆</span>
+                            <span class="star">☆</span>
+                        </div>
+                        <h2 style="margin: 5px 0; font-size: 20px; font-weight: 300;">Iphone 11</h2>
+                        <p style="font-weight: bold;">
+                            $122.00
+                        </p>
+                    </div>
+                </div>
+
+                <!-- phone 2 -->
+                <div class="phone ipad">
+                    <div class="item">
+                        <div class="item-img item-img-2">
+                        </div>
+                        <div style="width: 100%;">
+                            <div class="item-options">
+                                <ul>
+                                    <li>
+                                        <i class="fi fi-rr-heart"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-replace"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-eye"></i>
+                                    </li>
+                                </ul>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px; text-align: center;">
+                        <div class="stars" style="color: burlywood;">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">☆</span>
+                            <span class="star">☆</span>
+                        </div>
+                        <h2 style="margin: 5px 0; font-size: 20px; font-weight: 300;">Ipad</h2>
+                        <p style="font-weight: bold;">
+                            $92.00
+                        </p>
+                    </div>
+                </div>
+
+                <!-- phone 3 -->
+                <div class="phone iphone8">
+                    <div class="item">
+                        <div class="item-img item-img-3">
+                        </div>
+                        <div style="width: 100%;">
+                            <div class="item-options">
+                                <ul>
+                                    <li>
+                                        <i class="fi fi-rr-heart"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-replace"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-eye"></i>
+                                    </li>
+                                </ul>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px; text-align: center;">
+                        <div class="stars" style="color: burlywood;">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">☆</span>
+                            <span class="star">☆</span>
+                        </div>
+                        <h2 style="margin: 5px 0; font-size: 20px; font-weight: 300;">Iphone 8</h2>
+                        <p style="font-weight: bold;">
+                            $122.00
+                        </p>
+                    </div>
+                </div>
+
+                <!-- phone 4 -->
+                <div class="phone iphone9">
+                    <div class="item">
+                        <div class="item-img item-img-4">
+                        </div>
+                        <div style="width: 100%;">
+                            <div class="item-options">
+                                <ul>
+                                    <li>
+                                        <i class="fi fi-rr-heart"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-replace"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-eye"></i>
+                                    </li>
+                                </ul>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px; text-align: center;">
+                        <div class="stars" style="color: burlywood;">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">☆</span>
+                            <span class="star">☆</span>
+                        </div>
+                        <h2 style="margin: 5px 0; font-size: 20px; font-weight: 300;">Iphone 9</h2>
+                        <p style="font-weight: bold;">
+                            $122.00
+                        </p>
+                    </div>
+                </div>
+
+                <!-- phone 5 -->
+                <div class="phone iphone11">
+                    <div class="item">
+                        <div class="item-img item-img-5">
+                        </div>
+                        <div style="width: 100%;">
+                            <div class="item-options">
+                                <ul>
+                                    <li>
+                                        <i class="fi fi-rr-heart"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-replace"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fi fi-rr-eye"></i>
+                                    </li>
+                                </ul>
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 40px; text-align: center;">
+                        <div class="stars" style="color: burlywood;">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">☆</span>
+                            <span class="star">☆</span>
+                        </div>
+                        <h2 style="margin: 5px 0; font-size: 20px; font-weight: 300;">Iphone 11</h2>
+                        <p style="font-weight: bold;">
+                            $122.00
+                        </p>
+                    </div>
+                </div>
+
+                <h1 style="grid-column: span 4;" class="iphone10">No Iphone 10 in my store</h1>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
