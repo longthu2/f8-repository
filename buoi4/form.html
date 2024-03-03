@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./global.css">
+
+    <style>
+
+        body {
+            font-family: sans-serif;
+        }
+
+        #form-content:hover .btn-submit {
+            color: white;
+            background-color: #ffa500!important;
+        }
+
+        #form-content:hover .email-submit {
+            background-color: #ddd;
+        }
+
+        .email-submit::placeholder {
+            transition-duration: 0.5s;
+        }
+
+        #form-content:hover .email-submit::placeholder {
+            color: #ffa500;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>test</h1>
+    <section id="form-content" style="background-color: #334455; padding: 20px;">
+        <h1 style="color: white;">
+            <span style="color: #ffa500;">Earn income</span>
+            with your CSS skills
+        </h1>
+        <p style="color: white; margin: 15px 0; font-weight: 300; font-size: 14px;">
+            Sign up and we'll send you the best freelance opportunities straight to your inbox.
+            <br>
+            We're building the largest self-service freelancing marketplace for people like you.
+        </p>
+
+        <input 
+            class="email-submit"
+            type="text" 
+            placeholder="Email address" 
+            style="
+                padding: 10px;
+                border-radius: 5px; 
+                border: 1px solid #334455;
+                transition-duration: 0.5s;
+            "
+        >
+        <button 
+            class="btn-submit"
+            style="
+                text-transform: capitalize; 
+                padding: 10px; 
+                border-radius: 5px; 
+                border: 1px solid #334455; 
+                background-color: #f8db35; 
+                transition-duration: 0.5s;
+            "
+        >
+            send me opportunities
+        </button>
+    </section>
 </body>
+
 </html>
