@@ -14,13 +14,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <style>
-        h1, button {
+        h1,
+        button {
             font-family: "Alfa Slab One", serif;
         }
 
-        h3, input {
+        h3,
+        input {
             font-family: "Bebas Neue", sans-serif;
         }
+
         input {
             padding: 20px;
             border: 1px solid #ddd;
@@ -59,12 +62,15 @@
             <h3 style="text-transform: uppercase; color: #3a2516; font-size: 30px;">reservation</h3>
             <h1 style="color: #3a2617; font-size: 40px;">Book your table</h1>
             <div id="form-input" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-                <input type="text" placeholder="name">
+                <input type="text" placeholder="name" autofocus>
                 <input type="text" placeholder="email">
                 <input type="text" placeholder="date">
                 <input type="text" placeholder="time">
                 <input type="text" placeholder="people">
                 <button style="text-transform: capitalize;">find a table</button>
+            </div>
+            <div style="margin-top: 20px;">
+                <a href="../index.html" style="color: black;">Back to dashboard</a>
             </div>
         </section>
     </main>
