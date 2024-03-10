@@ -9,7 +9,7 @@ body {
 }
 
 #login-form {
-    background-image: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg);
+    background-image: url(./img/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
