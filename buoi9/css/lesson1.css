@@ -1,0 +1,74 @@
+#layout {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.step {
+    text-align: right;
+    width: 250px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-right: 1px solid #ddd;
+    position: relative;
+}
+
+
+.step p {
+    margin: 15px 0;
+}
+
+.step h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.step .label span {
+    padding: 5px;
+    background-color: #f3f3f3;
+    color: #707074;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.step .label span:hover {
+    color: white;
+    background-color: #a26f5a;
+    cursor: pointer;
+}
+
+.green {
+    width: 20px;
+    position: absolute;
+    height: 20px;
+    background-color: #edf6f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    right: 904px;
+    top: 0;
+}
+
+.green .content {
+    width: 10px;
+    height: 10px;
+    background-color: #3e8b7f;
+    border-radius: 50%;
+}
+
+.green-2 {
+    top: 150px;
+}
+
+.green-3 {
+    top: 300px;
+}
+
+.green-4 {
+    top: 450px;
+}
+
+
